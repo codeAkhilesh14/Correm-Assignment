@@ -91,6 +91,33 @@ Correm Assignment/
 
 ---
 
+## 📸 Screenshots
+
+<img width="1889" height="899" alt="{6BA82B42-FDD8-4F6C-BD54-3DBB599DD478}" src="https://github.com/user-attachments/assets/a4b3ba19-b9c3-4dc4-94be-de6d37559093" />
+
+<img width="1871" height="869" alt="{4EC83F03-083C-4ED7-ABE2-512C1D02F6A6}" src="https://github.com/user-attachments/assets/3f3160db-7544-4c42-b16c-1e8210f3ebc6" />
+
+
+
+![Uploading {CEAD9707-300B-4583-BC18-E56A52C803A9}.png…]()
+
+<img width="1226" height="749" alt="{269C3EF9-B223-41E9-A634-C35731E0FA9C}" src="https://github.com/user-attachments/assets/5bba999c-7d12-482f-bbf3-e6be70f26a32" />
+
+<img width="1178" height="838" alt="{0E4B9F53-C809-4134-A471-DE7FDC347040}" src="https://github.com/user-attachments/assets/a51c93b8-74e0-4eaf-987d-2a4c712ca796" />
+
+
+<img width="1874" height="893" alt="{4DEEE518-9697-48D3-866F-A96CD9E817EF}" src="https://github.com/user-attachments/assets/4350d73c-9797-4698-8699-c1d0db90faf9" />
+
+
+<img width="883" height="471" alt="{00FB7431-E955-4294-B1DB-E692010C3DB7}" src="https://github.com/user-attachments/assets/2efbbe7a-e9c7-4443-afb7-92ffc0b53a93" />
+
+
+<img width="1102" height="856" alt="{E00B6F0E-BDF4-4435-A87E-225F773E4B85}" src="https://github.com/user-attachments/assets/62e35693-e042-490c-a4da-2fce49d669fc" />
+
+<img width="696" height="856" alt="{FA2E43A8-D6A2-4C57-985E-16E518874E58}" src="https://github.com/user-attachments/assets/205531a7-ae45-40fb-b59b-d675935f3462" />
+
+---
+
 ## 🛠️ Local Installation & Setup
 
 ### Prerequisites
