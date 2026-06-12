@@ -1,0 +1,41 @@
+# Backend secrets and environment files
+.env
+backend/.env
+frontend/.env
+*.env
+*.env.*
+
+# Python virtual environment
+backend/venv/
+venv/
+ENV/
+env/
+
+# Python caching and temporary files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.cache/
+
+# Local statement uploads (prevent committing user statement PDFs)
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# Node dependencies and builds
+node_modules/
+frontend/node_modules/
+dist/
+frontend/dist/
+dist-ssr/
+*.local
+
+# System/Editor files
+.DS_Store
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
