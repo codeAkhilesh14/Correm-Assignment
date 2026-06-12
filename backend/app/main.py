@@ -34,9 +34,7 @@ app = FastAPI(
 # CORS Configuration
 # In production, specify exact domains. Using list of origins for development/production flexibility.
 origins = [
-    "http://localhost:5173",  # Local Vite React Dev
-    "http://127.0.0.1:5173",
-    "http://localhost:3000",
+    "https://correm-assignment.onrender.com"
 ]
 app.add_middleware(
     CORSMiddleware,
