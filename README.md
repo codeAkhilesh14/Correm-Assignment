@@ -1,4 +1,4 @@
-# 📑 Correm Bank Statement Analyzer
+# 📑 Bank Statement Analyzer
 
 Correm Bank Statement Analyzer is a production-ready, full-stack financial analytics application designed to parse HDFC Bank PDF statements (supporting both digital text-based PDFs and scanned image PDFs), extract transaction ledgers with 100% accuracy, run balance chain validation, automatically categorize transactions, visualize cash flows, and export professionally formatted Excel reports.
 
