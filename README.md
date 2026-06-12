@@ -4,6 +4,16 @@ Correm Bank Statement Analyzer is a production-ready, full-stack financial analy
 
 ---
 
+# 🌐 Live Deployment
+
+## Frontend
+https://correm-assignment.onrender.com
+
+## Backend
+https://correm-backend.onrender.com
+
+---
+
 ## 🚀 Key Features & Architectural Deep-Dive
 
 ### 1. Dual-Path PDF Parsing & Extraction Engine
