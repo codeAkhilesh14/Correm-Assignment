@@ -321,8 +321,10 @@ The backend contains a test suite built on `pytest` to verify API routes, authen
 
 ---
 
-## ⚖️ AI Disclosure & Development Notes
+## ⚖️ AI Tools Used:
 
-### Assistant Frameworks
-* Scaffolding structures, initial routing definitions, and UI component layers were designed and modified in cooperation with **Antigravity**, a paired AI programming agent.
-* Programmatic logic for OCR text pre-processing pipelines, openpyxl formatting engines, and Recharts graph elements were validated and enhanced iteratively using AI code intelligence.
+ChatGPT – Used to understand the assignment requirements, architecture planning, implementation approaches, debugging, and problem-solving.
+
+Claude – Used during application development, optimization, and implementation assistance.
+
+Gemini – Used for reviewing implementation approaches, and improving code quality.
