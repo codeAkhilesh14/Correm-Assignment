@@ -250,61 +250,6 @@ sudo apt install -y tesseract-ocr tesseract-ocr-eng poppler-utils
 ### 📤 Exporter Routing (`/api/export`)
 * `GET /api/export/excel/{id}`
   * Generates and downloads the styled 3-sheet Excel spreadsheet report.
-
----
-
-## ☁️ Deploying to Render
-
-### Option 1: Render Blueprints (Automatic Full-Stack Deploy)
-The project includes a `render.yaml` configuration that sets up both services concurrently:
-
-1. Commit and push your local branch changes (making sure MongoDB Atlas credentials/variables are managed safely) to your GitHub repository.
-2. In the [Render Dashboard](https://dashboard.render.com), click **New** $\rightarrow$ **Blueprint**.
-3. Select your repository.
-4. Render will parse `render.yaml` and provision:
-   * **correm-backend**: Native Python web service running FastAPI.
-   * **correm-frontend**: Native Static web service hosting the built React SPA.
-5. In the setup menu:
-   * Set **`MONGO_URI`** to your MongoDB Atlas cluster URI.
-6. Click **Approve** to begin builds.
-7. Once deployed, copy your live backend URL (e.g. `https://correm-backend.onrender.com`).
-8. Go to **correm-frontend** static site settings $\rightarrow$ **Environment Variables**, and set `VITE_API_URL` to `https://correm-backend.onrender.com/api`. Re-deploy the static site for variables to take effect.
-
-> [!NOTE]
-> When using Render's native Python environment, you may need to configure a custom build script to fetch and install Tesseract and Poppler libraries, or alternatively deploy the backend as a **Docker Web Service** using the provided `backend/Dockerfile` to ensure these system utilities build correctly.
-
----
-
-### Option 2: Manual Dashboard Deploy
-
-#### 1. Backend Service
-1. Click **New** $\rightarrow$ **Web Service** on Render.
-2. Choose your repository and set **Runtime** to **Docker** (recommended) or **Python**.
-3. If using **Docker**:
-   * **Docker Context**: `backend`
-   * **Dockerfile Path**: `backend/Dockerfile`
-4. If using **Python**:
-   * **Build Command**: `pip install -r backend/requirements.txt`
-   * **Start Command**: `cd backend && uvicorn app.main:app --host 0.0.0.0 --port $PORT`
-5. Under **Environment Variables**, configure:
-   * `ENV` = `production`
-   * `MONGO_URI` = *[Your MongoDB Atlas URI]*
-   * `DB_NAME` = `correm_analyzer`
-   * `JWT_SECRET` = *[Your Secret Key]*
-
-#### 2. Frontend Service
-1. Click **New** $\rightarrow$ **Static Site** on Render.
-2. Select your repository.
-3. Configure settings:
-   * **Build Command**: `cd frontend && npm install && npm run build`
-   * **Publish Directory**: `frontend/dist`
-4. Under **Environment Variables**, add:
-   * `VITE_API_URL` = `https://[your-backend-url].onrender.com/api`
-5. Under **Redirects/Rewrites**, add a rule:
-   * **Source**: `/*`
-   * **Destination**: `/index.html`
-   * **Action**: `Rewrite` *(This enables standard SPA client-side routing on refreshes)*
-
 ---
 
 ## 🧪 Running Tests
@@ -318,6 +263,13 @@ The backend contains a test suite built on `pytest` to verify API routes, authen
    ```bash
    pytest
    ```
+
+---
+
+## Deployment
+
+Frontend - Vercel ( Static site )
+Backend - Vercel ( Web Service )
 
 ---
 
